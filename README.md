@@ -73,7 +73,7 @@ gcloud container clusters create essay-project --num-nodes=1 --machine-type=c2-s
 
 ![Untitled](screenshots/Untitled%203.png)
 
-1. Create deployment, service and ingress yaml
+2. Create deployment, service and ingress yaml
 
 Create `essay-project-deployment.yaml`
 
@@ -138,7 +138,7 @@ spec:
                   number: 5000
 ```
 
-1. Create resources by yaml files
+4. Create resources by yaml files
 
 ```bash
 kubectl create -f essay-project-deployment.yaml
@@ -152,7 +152,7 @@ kubectl create -f essay-project-service-ingress.yaml
 
 ![Untitled](screenshots/Untitled%206.png)
 
-1. Check status and ingress external address IP 
+4. Check status and ingress external address IP 
 
 ```bash
 kubectl get pods
@@ -180,7 +180,7 @@ Try to ping the domain to make sure DNS is set correctly
 
 ![Untitled](screenshots/Untitled%2011.png)
 
-1. Open browser and type domain [http://essay.blueandhack.com](http://essay.blueandhack.com/) (After finishing the project, I shut down the cluster)
+2. Open browser and type domain [http://essay.blueandhack.com](http://essay.blueandhack.com/) (After finishing the project, I shut down the cluster)
 
 ![Untitled](screenshots/Untitled%2012.png)
 

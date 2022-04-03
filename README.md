@@ -138,7 +138,7 @@ spec:
                   number: 5000
 ```
 
-4. Create resources by yaml files
+3. Create resources by yaml files
 
 ```bash
 kubectl create -f essay-project-deployment.yaml

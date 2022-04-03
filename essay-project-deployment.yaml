@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: essay-project-deployment
+spec:
+  selector:
+    matchLabels:
+      app: essay-project-deployment
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: essay-project-deployment
+    spec:
+      containers:
+      - name: essay-project-deployment
+        image: blueandhack/essay-project
+        ports:
+        - containerPort: 5000
